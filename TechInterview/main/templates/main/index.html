@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="mt-5 mb-5 fs-3"> Вопросы с собеседований </h1>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for prof in object_list %}
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                    <a class="link-offset-2 link-offset-3-hover link-underline
+                        link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="{% url 'main:questions' prof.slug%}">
+                    {{ prof.title}}</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+[
+  {
+    "model": "main.interview",
+    "pk": 1,
+    "fields": {
+      "title": "Interview with a Python Developer",
+      "url": "http://example.com/interview1",
+      "profession": 1,
+      "tag": 1
+    }
+  },
+  {
+    "model": "main.interview",
+    "pk": 2,
+    "fields": {
+      "title": "Interview with a Data Scientist",
+      "url": "http://example.com/interview2",
+      "profession": 2,
+      "tag": 2
+    }
+  }
+]

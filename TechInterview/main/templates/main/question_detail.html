@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ question.tag.title }}
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="mt-5 mb-5 fs-3">{{ question.title }}</h1>
+
+    <div>
+        <p><strong>Тег:</strong> {{ question.tag.title }}</p>
+        <p><strong>Шанс:</strong> {{ question.chance }}%</p>
+        <p><strong>Ответ:</strong> {{ question.answer.text | linebreaksbr }}</p>
+        {% if question.answer.url %}
+            <p><strong>Подробнее:</strong> <a href="{{ question.answer.url }}">{{ question.answer.url }}</a></p>
+        {% endif %}
+    </div>
+{% endblock %}
+

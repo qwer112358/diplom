@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Требования на должность {{ questions.profession }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5 mb-5 fs-3">Вопросы с собеседований на {{ profession }}</h1>
+    <div class="row align-items-start">
+        <div class="col">
+            <table class="table table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th>Навык</th>
+                        <th>Упоминаний</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for skill in skills %}
+                    <tr>
+                        <td align="center" class="text-success">{{ skill.chance }}%</td>
+                        <td>
+                            <a href="{% url 'main:requirement_list' question.id %}"
+                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                {{ question.title }}</a>
+                        </td>
+                        <td>{{ skill.tag.title }}</td>
+                        <td>{{ question.tag.title }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+

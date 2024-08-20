@@ -1,0 +1,162 @@
+[
+  {
+    "model": "main.profession",
+    "pk": 1,
+    "fields": {
+      "title": "1C Developer",
+      "slug": "1C"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 2,
+    "fields": {
+      "title": "Android Developer",
+      "slug": "android_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 3,
+    "fields": {
+      "title": "Business Analyst",
+      "slug": "business_analyst"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 4,
+    "fields": {
+      "title": "C/C++ Developer",
+      "slug": "c_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 5,
+    "fields": {
+      "title": "C# Developer",
+      "slug": "c_sharp_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 6,
+    "fields": {
+      "title": "Data Scientist",
+      "slug": "data_scientist"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 7,
+    "fields": {
+      "title": "DevOps",
+      "slug": "devops"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 8,
+    "fields": {
+      "title": "Flutter Developer",
+      "slug": "flutter_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 9,
+    "fields": {
+      "title": "Frontend Developer",
+      "slug": "frontend_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 10,
+    "fields": {
+      "title": "Golang Developer",
+      "slug": "golang_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 11,
+    "fields": {
+      "title": "iOS Developer",
+      "slug": "ios_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 12,
+    "fields": {
+      "title": "Machine Learning Engineer",
+      "slug": "machine_learning_engineer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 13,
+    "fields": {
+      "title": "Java Developer",
+      "slug": "java_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 14,
+    "fields": {
+      "title": "Project Manager",
+      "slug": "project_manager"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 15,
+    "fields": {
+      "title": "Python Developer",
+      "slug": "python_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 16,
+    "fields": {
+      "title": "QA Engineer",
+      "slug": "qa_engineer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 17,
+    "fields": {
+      "title": "Ruby Developer",
+      "slug": "ruby_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 18,
+    "fields": {
+      "title": "Node.js Developer",
+      "slug": "node_js_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 19,
+    "fields": {
+      "title": "PHP Developer",
+      "slug": "php_developer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 20,
+    "fields": {
+      "title": "Product Manager",
+      "slug": "product_manager"
+    }
+  }
+]

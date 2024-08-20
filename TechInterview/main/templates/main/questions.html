@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Вопросы с собеседований на {{ questions.profession }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5 mb-5 fs-3">Вопросы с собеседований на {{ profession }}</h1>
+    <div class="row align-items-start">
+        <div class="col-12 col-md-2 d-flex flex-column align-items-start">
+            <p class="">Фильтр:</p>
+            <form method="GET">
+                <select class="form-select" aria-label="Default select example" name="tag">
+                    <option value="" selected>Все</option>
+                    {% for tag in tags %}
+                    <option value="{{ tag.title }}">{{ tag.title }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="btn btn-sm btn-primary mt-3">Выбрать</button>
+            </form>
+        </div>
+            <div class="col">
+            <table class="table table-sm table-hover">
+             <thead>
+            <tr>
+                <th>
+                    <a href="?sort=chance&order=asc" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Шанс ↑</a>
+                    <a href="?sort=chance&order=desc" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">↓</a>
+                </th>
+                <th>
+                    <a href="?sort=title&order=asc" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Вопрос ↑</a>
+                    <a href="?sort=title&order=desc" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">↓</a>
+                </th>
+                <th class="d-none d-sm-table-cell">
+                    <a href="?sort=tag&order=asc" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Тег ↑</a>
+                    <a href="?sort=tag&order=desc" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">↓</a>
+                </th>
+            </tr>
+        </thead>
+            <tbody>
+                {% for question in questions %}
+                <tr>
+                    <td align="center" class="text-success">{{ question.chance }}%</td>
+                    <td>
+                        <a href="{% url 'main:question_detail' question.id %}"
+                           class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                            {{ question.title }}</a>
+                    </td>
+                    <td>{{ question.tag.title }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </div>
+{% endblock %}
+
+

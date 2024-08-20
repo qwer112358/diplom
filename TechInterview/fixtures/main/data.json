@@ -1,0 +1,92 @@
+[
+  {
+    "model": "main.profession",
+    "pk": 1,
+    "fields": {
+      "title": "Software Engineer",
+      "slug": "software-engineer"
+    }
+  },
+  {
+    "model": "main.profession",
+    "pk": 2,
+    "fields": {
+      "title": "Data Scientist",
+      "slug": "data-scientist"
+    }
+  },
+  {
+    "model": "main.tag",
+    "pk": 1,
+    "fields": {
+      "title": "Python",
+      "professions": [1]
+    }
+  },
+  {
+    "model": "main.tag",
+    "pk": 2,
+    "fields": {
+      "title": "Machine Learning",
+      "professions": [1, 2]
+    }
+  },
+  {
+    "model": "main.answer",
+    "pk": 1,
+    "fields": {
+      "text": "This is a detailed answer about Python.",
+      "url": "http://example.com/python"
+    }
+  },
+  {
+    "model": "main.answer",
+    "pk": 2,
+    "fields": {
+      "text": "This is a detailed answer about Machine Learning.",
+      "url": "http://example.com/ml"
+    }
+  },
+  {
+    "model": "main.question",
+    "pk": 1,
+    "fields": {
+      "title": "What is Python?",
+      "tag": 1,
+      "chance": 70,
+      "answer": 1,
+      "profession": 1
+    }
+  },
+  {
+    "model": "main.question",
+    "pk": 2,
+    "fields": {
+      "title": "Explain Machine Learning.",
+      "tag": 2,
+      "chance": 80,
+      "answer": 2,
+      "profession": 2
+    }
+  },
+  {
+    "model": "main.interview",
+    "pk": 1,
+    "fields": {
+      "title": "Interview with a Python Developer",
+      "url": "http://example.com/interview1",
+      "profession": 1,
+      "tag": 1
+    }
+  },
+  {
+    "model": "main.interview",
+    "pk": 2,
+    "fields": {
+      "title": "Interview with a Data Scientist",
+      "url": "http://example.com/interview2",
+      "profession": 2,
+      "tag": 2
+    }
+  }
+]
